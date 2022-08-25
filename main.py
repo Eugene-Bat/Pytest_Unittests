@@ -12,7 +12,7 @@ def calculator(expression):
                     '-': lambda a, b: a - b,
                     '*': lambda a, b: a * b,
                     '/': lambda a, b: a / b,
-                }[sign](left,right)
+                }[sign](left, right)
             except (ValueError, TypeError):
                 raise ValueError('The expression must contain two integers and one sign')
 
